@@ -24,10 +24,17 @@ const App = () => {
 		getMovieRequest(searchValue);
 	}, [searchValue]);
 
+	// "rewrites": [
+	//	{
+	//	  "source": "**",
+	//	  "destination": "/index.html"
+	//	}
+	//  ]
+
 	return (
 		<div className='container-fluid movie-app'>
 			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<Headings heading='Movies' />
+				<Headings heading='Movies and series' />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
 			<div className='row'>
