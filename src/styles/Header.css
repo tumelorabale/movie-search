@@ -1,0 +1,17 @@
+.navbar {
+    width: auto;
+    height: 5vh;
+    background: #272626;
+    position: relative;
+    transform: top 1s;
+    margin-top: 0;
+    padding: -2px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+  }
+  .my{
+      display: flex;
+      flex-direction: row;
+      row-gap: 10;
+  }

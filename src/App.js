@@ -4,7 +4,7 @@ import './App.css';
 import MovieList from './components/MovieList';
 import SearchBox from './components/SearchBox';
 import Headings from './components/NavBar';
-
+import Header from './components/Header';
 const App = () => {
 	const [movies, setMovies] = useState([]);
 	const [searchValue, setSearchValue] = useState('');
@@ -30,17 +30,17 @@ const App = () => {
 	//	  "destination": "/index.html"
 	//	}
 	//  ]
-
 	return (
-		<div className='container-fluid movie-app'>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<Headings heading='Movies and series' />
-				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
-			</div>
-			<div className='row'>
-				<MovieList movies={movies} />
-			</div>
+		<div className='App'>
+		<div>
+			<Header/>
+			<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+			<Headings heading='Movies and Series'/>
 		</div>
+		<div className='row'>
+			<MovieList movies={movies} />
+		</div>
+	</div>		
 	);
 };
 export default App;

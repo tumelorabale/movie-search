@@ -1,0 +1,12 @@
+.App{
+    margin: 0;
+    box-sizing: border-box;
+    background:scroll;
+    padding: 0;
+    justify-content: center;
+    height: 1000vh;
+    background-color: rgb(34, 37, 37);
+    color: aliceblue;
+    text-align: center;
+}
+
