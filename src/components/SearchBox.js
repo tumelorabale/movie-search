@@ -15,8 +15,6 @@ const SearchBox =(props)=>{
         <div className='icon'>
         <SearchIcon sx={{ fontSize: 25 }}/>
         </div>
-        
-       
     </div>
   )
 }

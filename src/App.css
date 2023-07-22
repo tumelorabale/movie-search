@@ -6,7 +6,34 @@
     justify-content: center;
     height: 1000vh;
     background-color: rgb(34, 37, 37);
+    background-size: contain;
     color: aliceblue;
     text-align: center;
 }
+.logo{
+    margin-top: 10px;
+}
+.mymovies{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+  /* Medium screens (>= 768px) */
+  @media screen and (max-width: 767px) {
+    .mymovies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens (< 576px) */
+@media screen and (max-width: 575px) {
+    .mymovies {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: 20%;
+    }
+}
+
 

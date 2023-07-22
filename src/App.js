@@ -4,7 +4,7 @@ import './App.css';
 import MovieList from './components/MovieList';
 import SearchBox from './components/SearchBox';
 import Headings from './components/NavBar';
-import Header from './components/Header';
+import Logo from '../src/assets/movies.jpg'
 const App = () => {
 	const [movies, setMovies] = useState([]);
 	const [searchValue, setSearchValue] = useState('');
@@ -33,11 +33,13 @@ const App = () => {
 	return (
 		<div className='App'>
 		<div>
-			<Header/>
+			<div className='header'>
+			<img className='logo' src={Logo} width='60px' height='60px' alt='logo'></img>
 			<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+			</div>
 			<Headings heading='Movies and Series'/>
 		</div>
-		<div className='row'>
+		<div className='mymovies'>
 			<MovieList movies={movies} />
 		</div>
 	</div>		
