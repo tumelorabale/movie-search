@@ -1,0 +1,17 @@
+/* CSS file */
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    margin-top: 40px;
+  }
+  .title{
+      font-weight: bold;
+      font-size: 20px;
+  }
+  .year{
+      font-weight: bold;
+  }
+  
